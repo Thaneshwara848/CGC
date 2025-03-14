@@ -9,12 +9,13 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
-import com.example.demo.model.Product;
+import com.example.demo.DTO.Product;
 @Service
 public class service2 {
 	
 	@Autowired
 	RestTemplate restTemplate;
+	
 	
 	final String ROOT_URI = "http://localhost:9999/getProductS1";
 	final String ROOT_URI2 = "http://localhost:9999/setProdS1";
@@ -26,6 +27,7 @@ public class service2 {
 		ResponseEntity<Product[]> response = restTemplate.getForEntity(ROOT_URI, Product[].class);
 		System.out.println(response);
 		return Arrays.asList(response.getBody());
+//		retrun repo.findAll();
 	}
 	
 	public Product FindModelbyId(int id) {

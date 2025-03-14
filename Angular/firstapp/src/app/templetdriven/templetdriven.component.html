@@ -1,0 +1,27 @@
+<div class="templet">
+    <h4>Templet Driven From : we do it html </h4>
+    <form #userForm="ngForm" (ngSubmit)="userdate(userForm.value)" >
+        <div class="form-inline">
+            <label>USER NAME <span style="color: red;"  *ngIf="uname.invalid">*</span> :</label>
+           
+            <input type="text" name="uname" class="form-control"   required  ngModel #uname="ngModel"><br>
+            <span *ngIf="uname.invalid && uname.touched" style="color: red;">Name is required</span>
+        </div>
+    
+        
+        <div class="form-inline">
+            <label>USER PASS <span style="color: red;"  *ngIf="upass.invalid">*</span>  :</label>
+            <input type="text" name="upass" class="form-control"  required ngModel #upass="ngModel"><br>
+            <span *ngIf="upass.invalid && upass.touched" style="color: red;">Password is required</span>
+        </div>
+
+    
+        <div>
+            <br>
+            <input type="submit" value="LOGIN" class="btn btn-success">
+            <input type="reset" value="RESET" class="btn btn-danger">
+        </div>
+    
+    </form>
+    <!-- form-control ng-dirty ng-touched ng-invalid -->
+</div>

@@ -5,7 +5,9 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
-import com.example.demo.model.Product;
+
+import com.example.demo.DTO.Product;
+
 import reactor.core.publisher.Mono;
 
 @Service

@@ -1,0 +1,28 @@
+Recap of all Core  java concepts 
+JDBC : steps , MySQL , oracle , type of stmt , Result Statemeta Data 
+Hibernate :  save/ delete / find/ update / HQL  : mapping (1-1,1-m)(IMP)
+Spring
+	Core : IOC , beanF , AC , DI , SI ,CI , Auto Wired (4 types), Scope 
+	Hibernate :
+	MVC : no
+	AOP : no 
+	Spring - Boot :
+			Advantage o Spring over Spring boot 
+			Spring rest : Rest Controler ,All mapping(collections)
+			layered Arc : Controller Service , Model , Repo , 
+			Web : Rest API 
+			POST MAN / Swagger 
+			Lombok 
+			Goble Exception Handling 
+			Validation
+			Spring security : basic , DB , JWT
+			Mokito  
+			Microservices : 
+				Rest Templet, Web Client , Fiegn Client
+				Spring Cloud : Eureka Server / Eureka Client     
+				API gate way 
+				Theory : Load Balancer, Fault Tolerance , Circuit breaker
+We done with back End :
+			@CrossOrign("front end URL ") 
+We have start the Front end : (ANGULAR ) : HTML , CSS , Bootstrap (self learning)
+				: JAVA SCRIPT , TYPESCRIPT, ANGUALR 

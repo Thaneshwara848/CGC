@@ -1,0 +1,29 @@
+<h3>
+    <input type="submit" value="CLICK" (click)="abc()" >
+    <hr>
+    
+<input type="text" #uname>
+
+<input type="submit" value="SEND" (click)="myname(uname.value)">
+<hr>
+
+A : <input type="text" #a><br>
+B : <input type="text" #b><br>
+
+<input type="submit" value="ADD" (click)="add(a.value,b.value)">
+<hr>
+My Name is {{username}}
+</h3>
+
+
+<input type="submit" value="My Button" [disabled]="mychoice">
+<hr>
+<h3>
+    principle : <input type="text" #p><br>
+    rate of Int: <input type="text" #r> <br>
+    Timein Mon : <input type="t<ext" #t><br>
+    Totla :<input type="text" value={{total}}><br>
+    EMI :<input type="text" value={{emi}}><br>
+
+    <input type="submit" value="Caculate" (click)="cal(p.value,r.value,t.value)">
+</h3>

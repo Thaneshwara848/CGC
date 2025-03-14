@@ -12,15 +12,16 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.demo.model.Product;
+import com.example.demo.DTO.Product;
 import com.example.demo.service.Service3;
+import com.example.demo.service.service2;
 
 
 @RestController
 public class controller2 {
 	
 	@Autowired
-	private Service3 serv;
+	private service2 serv;
 	
 	@GetMapping("/getProductS3")
 	public List<Product> FindAllModel() {

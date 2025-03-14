@@ -8,6 +8,10 @@ import org.springframework.web.client.RestTemplate;
 @SpringBootApplication
 public class Springcommunication3Application {
 	
+	@Bean
+	public RestTemplate restTemplate() {
+	    return new RestTemplate();
+	}
 	
 	public static void main(String[] args) {
 		SpringApplication.run(Springcommunication3Application.class, args);
@@ -15,3 +19,5 @@ public class Springcommunication3Application {
 	}
 
 }
+
+
